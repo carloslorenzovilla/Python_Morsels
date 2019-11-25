@@ -3,7 +3,7 @@
 # corresponding numbers in the two given lists-of-lists added together.
 
 def add(*matrix):
-    """ Calculates elementwise sum of two or more matricies
+    """ Calculates elementwise sum of two or more 2D matricies
 
         *matrix: tuple of matricies
 
