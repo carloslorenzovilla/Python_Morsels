@@ -5,7 +5,13 @@
 # month, year, and day will always be represented by 2, 4, and 2 
 # digits respectively.
 
-def get_earliest(*dates):    
+def get_earliest(*dates):
+    """ Determines the earliest date in a sequence
+    
+        *dates: tuple of dates
+        
+        returns: string
+    """
     older = dates[0]
     for i, (month, day, year) in enumerate((date.split('/') for date in dates)):     
         if year < older[-4:]:
