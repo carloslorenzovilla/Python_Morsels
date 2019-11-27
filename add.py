@@ -7,7 +7,7 @@ def add(*matrix):
 
         *matrix: tuple of matricies
 
-        returns: list of lists matrix
+        returns: list of lists (a matrix)
     """
     element_sum = [
         [
