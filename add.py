@@ -7,7 +7,7 @@ def add(*matricies):
 
         *matrix: tuple of matricies
 
-        returns: list of lists matrix
+        returns: list of lists (a matrix)
     """
     mat_shape = {
         tuple(len(x) for x in matrix) 
