@@ -6,7 +6,8 @@
 # digits respectively.
 
 def get_earliest(*dates):
-    """ Determines the earliest date in a sequence
+    """ Determines the earliest date in a sequence formatted
+        MM/DD/YYYY.
     
         *dates: tuple of dates
         
