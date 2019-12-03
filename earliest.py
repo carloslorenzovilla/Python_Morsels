@@ -12,12 +12,7 @@ def get_earliest(*dates):
         
         returns: string
     """
-    older = dates[0]
-    for i, (month, day, year) in enumerate((date.split('/') for date in dates)):     
-        if year < older[-4:]:
-            older = dates[i]
-        if year == older[-4:] and month < older[0:2]:
-            older = dates[i]
-        if year == older[-4:] and month == older[0:2] and day < older[3:5]:
-            older = dates[i]
-    return older
+    def date_key(date):
+        (m, d, y) = date.split('/')
+        return (y, m, d)
+    return min(dates, key=date_key)
