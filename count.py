@@ -6,7 +6,7 @@
 import re
 
 def count_words(string_):
-    regex = r'\w+'
+    regex = r'(\b\w+[\']\w+\b|\b\w+\b)'
     string_ = re.findall(regex, string_)
     dict_ = {}
     for word in string_:
