@@ -6,10 +6,10 @@
 import re
 
 def count_words(string_):
-    regex = r'(\w+[\']\w+|\w+)'
-    string_ = re.findall(regex, string_)
+    regex = r"[\w'-]+"
+    list_ = re.findall(regex, string_)
     dict_ = {}
-    for word in string_:
+    for word in list_:
         word = word.lower()
         dict_[word] = dict_.get(word, 0) + 1
     return dict_
