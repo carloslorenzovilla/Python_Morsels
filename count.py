@@ -4,12 +4,16 @@
 # seen as the values.
 
 import re
+from collections import Counter
 
 def count_words(string_):
+    """ Returns the count of each word in a string
+
+        string_: string
+
+        returns: Counter object
+    """
     regex = r"[\w'-]+"
-    list_ = re.findall(regex, string_)
-    dict_ = {}
-    for word in list_:
-        word = word.lower()
-        dict_[word] = dict_.get(word, 0) + 1
-    return dict_
+    list_ = re.findall(regex, string_.lower())
+    counter = Counter(list_)
+    return counter
