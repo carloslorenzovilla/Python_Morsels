@@ -5,6 +5,13 @@
 import collections
 
 def uniques_only(list_):
+    """ Returns iterator of unique items 
+        in a list.
+
+        list_: list of items
+
+        returns: generator (iterator)
+    """
     gen = set()
     return (x for x in list_ if not (x in gen or gen.add(x)))
 
