@@ -1,8 +1,8 @@
 from math import pi
 
 class Circle:
-    def __init__(self, rad=1):
-        self.radius = rad
+    def __init__(self, r=1):
+        self.radius = r
 
     def __str__(self):
         return (f'Circle({self.radius})')
