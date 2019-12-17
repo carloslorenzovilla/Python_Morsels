@@ -1,6 +1,9 @@
 from math import pi
 
 class Circle:
+    """ This class represents a circle.
+
+    """
     def __init__(self, r=1):
         self.radius_ = r
 
@@ -33,6 +36,3 @@ class Circle:
         if d < 0:
             raise ValueError('Radius cannot be negative')
         self.radius_ = d/2
-    
-    
-
