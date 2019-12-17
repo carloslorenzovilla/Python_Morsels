@@ -8,9 +8,9 @@ def uniques_only(list_):
     """ Returns iterator of unique items 
         in a list.
 
-        list_: list of items
+        list_: iterable
 
-        returns: generator (iterator)
+        returns: iterator
     """
     hash_seen = set()
     not_hash_seen = []
